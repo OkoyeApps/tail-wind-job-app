@@ -1,0 +1,14 @@
+{
+    "presets": [
+        "@babel/preset-react",
+        "next/babel",
+        [
+            "@babel/preset-env",
+            {
+                "targets": {
+                    "esmodules": true
+                }
+            }
+        ]
+    ]
+}
