@@ -1,0 +1,95 @@
+/* Navigation */
+
+.nav_ul_1 {
+    width: 700px;
+}
+
+.nav_ul_2 {
+    width: 320px;
+}
+
+.nav_btn {
+    border: 2px solid rgb(0, 162, 255);
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight: 600;
+}
+
+.nav_profile, .nav_profile2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(0, 162, 255);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_profile2 {
+    display: none;
+}
+
+.nav_profile_reminder {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: -0px;
+    right: -2px;
+}
+
+.menuBar {
+    display: none;
+    width: 0px;
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+}
+
+.menuSpan {
+    width: 30px;
+    display: block;
+    background: black;
+    height: 3px;
+    border-radius: 2px;
+    margin-top: 3px;
+}
+
+.navDrop {
+    display: none;
+}
+
+
+@media(max-width: 1320px) {
+    .nav_ul_1, .nav_ul_2 {
+        display: none;
+    }
+    .nav_profile2 {
+        display: block;
+    }
+    .menuBar {
+        position: relative;
+        display: block;
+    }
+    .logo {
+        margin-left: 40px;
+    }
+    .navDrop {
+        display: block;
+        width: 100%;
+        /* height: 200px; */
+        z-index: 3;
+        overflow: hidden;
+        transition: 0.3s ease-in-out;
+        background: white;
+    }
+    .navDrop_list {
+        padding: 0px 40px;
+    }
+}
+
+/* ul > li {
+
+} */
