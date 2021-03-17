@@ -11,7 +11,7 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className={`w-full h-9 sticky top-0 left-0 flex items-center px-10 justify-between z-50 bg-white py-5`}>
+            <nav className={`w-full h-9 sticky top-0 left-0 flex items-center md:px-10 px-4 justify-between z-50 bg-white py-5`}>
                 <div className="flex">
                     <div className={styles.menuBar} onClick={handleHide}>
                         <span className={styles.menuSpan}></span>

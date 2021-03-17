@@ -70,7 +70,6 @@ const FilterCard = ({ filterList }) => {
     };
 
     const sortInSearchedData = (filter_key,filter_string, searchparams ) => {
-        debugger;
         let arrayOfJobs = jobs.data_before_search_filter.length > 0 ? jobs.data_before_search_filter : jobs.alljobs;
         let arrayClone = JSON.parse(JSON.stringify(arrayOfJobs));
         let result = arrayOfJobs.filter(x => {

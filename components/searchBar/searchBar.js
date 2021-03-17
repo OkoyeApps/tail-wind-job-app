@@ -32,7 +32,6 @@ const Searchbar = () => {
                 setSearchedData({ ...searchedData, data: [], searched_url: url });
             }
         } else {
-            debugger;
                 setSearchedData({ searched_url: url, data: data });
         }
     };
